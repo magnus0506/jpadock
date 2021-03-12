@@ -14,7 +14,9 @@
     <name>jpadock</name>
     <description>JPA Docker project</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>1.11</java.version>
+        <maven.compiler.release>11</maven.compiler.release>
+
     </properties>
     <dependencies>
         <dependency>
@@ -42,6 +44,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>jpa-project</finalName>
+                </configuration>
             </plugin>
         </plugins>
     </build>
